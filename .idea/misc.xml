@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/changgou-parent/pom.xml" />
         <option value="$PROJECT_DIR$/changgou-parent/changgou-service-api/changgou-service-goods-api/pom.xml" />
+        <option value="$PROJECT_DIR$/changgou-parent/changgou-service/changgou-service-goods/pom.xml" />
+        <option value="$PROJECT_DIR$/changgou-parent/changgou-service/changgou-service-file/pom.xml" />
       </list>
     </option>
   </component>
