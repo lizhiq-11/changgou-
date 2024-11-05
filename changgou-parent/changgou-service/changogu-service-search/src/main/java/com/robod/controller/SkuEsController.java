@@ -1,12 +1,10 @@
 package com.robod.controller;
 
 import com.robod.entity.Result;
+import com.robod.entity.SearchEntity;
 import com.robod.entity.StatusCode;
 import com.robod.service.intf.SkuEsService;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author Robod
@@ -31,5 +29,16 @@ public class SkuEsController {
     public Result importData(){
         skuEsService.importData();
         return new Result(true, StatusCode.OK,"数据导入成功");
+    }
+
+    /**
+     * 根据关键词搜索
+     * @param searchEntity
+     * @return
+     */
+    @GetMapping
+    public Result<SearchEntity> searchByKeywords(@RequestBody(required = false) SearchEntity searchEntity) {
+        SearchEntity result = skuEsService.searchByKeywords(searchEntity);
+        return new Result<>(true,StatusCode.OK,"根据关键词搜索成功",result);
     }
 }
