@@ -13,11 +13,13 @@
 
     <dependencies>
         <!--canal依赖-->
+
         <dependency>
-            <groupId>com.xpand</groupId>
-            <artifactId>starter-canal</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>com.github.luues.boot</groupId>
+            <artifactId>spring-boot-starter-canal</artifactId>
+            <version>1.0.0.0.RELEASE</version>
         </dependency>
+
         <dependency>
             <groupId>com.robod</groupId>
             <artifactId>changgou-service-content-api</artifactId>
