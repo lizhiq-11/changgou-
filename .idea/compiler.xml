@@ -7,16 +7,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="changgou-service-search-api" />
-        <module name="changgou-service-goods" />
-        <module name="changgou-service-goods-api" />
         <module name="changgou-eureka" />
-        <module name="changgou-service-canal" />
-        <module name="changgou-service-content-api" />
         <module name="changgou-service-content" />
-        <module name="changogu-service-search" />
-        <module name="changgou-common-db" />
+        <module name="changgou-web-item-api" />
         <module name="changgou-common" />
         <module name="changgou-service-file" />
+        <module name="changgou-service-goods" />
+        <module name="changgou-service-goods-api" />
+        <module name="changgou-service-canal" />
+        <module name="changgou-service-content-api" />
+        <module name="changogu-service-search" />
+        <module name="changgou-common-db" />
+        <module name="changgou-search-web" />
       </profile>
     </annotationProcessing>
   </component>
@@ -25,6 +27,7 @@
       <module name="changgou-common" options="-parameters" />
       <module name="changgou-common-db" options="-parameters" />
       <module name="changgou-eureka" options="-parameters" />
+      <module name="changgou-search-web" options="-parameters" />
       <module name="changgou-service-canal" options="-parameters" />
       <module name="changgou-service-content" options="-parameters" />
       <module name="changgou-service-content-api" options="-parameters" />
@@ -32,6 +35,7 @@
       <module name="changgou-service-goods" options="-parameters" />
       <module name="changgou-service-goods-api" options="-parameters" />
       <module name="changgou-service-search-api" options="-parameters" />
+      <module name="changgou-web-item-api" options="-parameters" />
       <module name="changogu-service-search" options="-parameters" />
     </option>
   </component>
