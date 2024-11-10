@@ -1,7 +1,10 @@
 package com.robod.service.intf;
-import com.robod.goods.pojo.Sku;
 import com.github.pagehelper.PageInfo;
+import com.robod.goods.pojo.Sku;
+
 import java.util.List;
+import java.util.Map;
+
 /****
  * @Author:admin
  * @Description:Sku业务层接口
@@ -33,6 +36,13 @@ public interface SkuService {
      */
     List<Sku> findList(Sku sku);
 
+    /**
+     * 根据spu_id查询对应的sku集合
+     * @param id
+     * @return
+     */
+    List<Sku> findBySpuId(Long id);
+
     /***
      * 删除Sku
      * @param id
@@ -63,4 +73,24 @@ public interface SkuService {
      * @return
      */
     List<Sku> findAll();
+
+    /**
+     * 根据spuid删除对应的sku
+     * @param id
+     * @return
+     */
+    void deleteAllSkuBySpuId(Long id);
+
+    /**
+     * 根据sku_id集合查询sku集合
+     * @param skuIds
+     * @return
+     */
+    List<Sku> findBySkuIds(List<Long> skuIds);
+
+    /**
+     * 修改sku map集合
+     * @param map
+     */
+    void updateMap(Map<Long, Sku> map);
 }
